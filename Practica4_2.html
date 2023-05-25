@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Solicitud de Datos - Aerolínea Nao</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: navy;
+            color: black;
+            /* Cambiado a negro */
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 600px;
+            margin: 60px auto;
+            padding: 100px;
+            background-color: white;
+            border-radius: 5px;
+            text-align: left;
+            /* Alineado a la izquierda */
+        }
+        
+        .container h2 {
+            margin-top: 0;
+        }
+        
+        .container input[type="text"],
+        .container input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        .container label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+        
+        .container input[type="submit"] {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .container input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+        
+        .button--Inicio {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Solicitud de Datos - Aerolínea Nao</h2>
+        <form>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <br>
+            <label for="Correo electronico">Correo Personal:</label>
+            <input type="text" id="Correo aqui" required>
+
+            <br>
+            <label for="Fecha">Fecha:</label>
+            <input type="date" id="fecha de registro" required>
+            <br>
+            <br>
+            <br>
+            <label for="Tiempo">Tiempo:</label>
+            <input type="time" id="Tiempo" required>
+            <br>
+            <br>
+            <br>
+            <label for="Fecha y hora">Fecha y hora:</label>
+            <input type="datetime-local" id="Fecha_Hora" required>
+            <br>
+            <br>
+            <br>
+            <label for="Mes">Mes:</label>
+            <input type="month" id="pais-emision" required>
+            <br>
+            <br>
+            <br>
+            <label for="fecha-emision">Numero(minimo -10 max 10):</label>
+            <input type="number" id="fecha-emision" required>
+            <br>
+            <br>
+            <label for="Telefono">Telefono Movil:</label>
+            <input type="Telefono" id="fecha-emision" required>
+            <br>
+            <br>
+            <br>
+            <label for="Color Favorito">Color Favorito:</label>
+            <input type="color" id="fecha-emision" required>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Por favor, complete todos los campos.</p>
+        <br>
+        <br>
+        <h5>Regresar a la pagina principal</h5>
+        <a href="practica5_final.html" class="button--Inicio">Inicio</a>
+    </div>
+</body>
+
+</html>

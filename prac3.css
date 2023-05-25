@@ -1,0 +1,121 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #3f9086;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    /* color de fondo del contenedor */
+}
+
+
+/* Estilos para la cabecera */
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+
+/* Estilos para la sección de experiencia laboral */
+
+.cv h2:first-of-type {
+    margin-top: 40px;
+}
+
+.cv hr {
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.cv p {
+    margin-bottom: 10px;
+}
+
+.cv h2 {
+    margin-top: 30px;
+}
+
+
+/* Estilos para la sección de habilidades y aptitudes */
+
+.cv ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cv li {
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para la sección de información adicional */
+
+.cv p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* Estilos para enlaces */
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Agregamos estilos para el fondo azul y el cuadro blanco */
+
+.container {
+    background-color: #42657e;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    /* Agregamos sombra al contenedor */
+}
+
+.cv {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.button--Inicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}

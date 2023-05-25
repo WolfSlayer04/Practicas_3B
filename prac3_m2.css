@@ -1,0 +1,94 @@
+/* Estilo para el cuerpo del documento */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+
+/* Estilo para el contenedor principal */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para el título */
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo para los subtítulos */
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a0000;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* Estilo para el texto principal */
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #440202;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo para el formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo para los campos de entrada */
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+
+/* Estilo para el botón de enviar */
+
+button[type="submit"] {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button--Inicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}

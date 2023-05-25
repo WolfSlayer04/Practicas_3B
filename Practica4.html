@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Solicitud de Datos - Aerolínea</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: navy;
+            color: black;
+            /* Cambiado a negro */
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            text-align: left;
+            /* Alineado a la izquierda */
+        }
+        
+        .container h2 {
+            margin-top: 0;
+        }
+        
+        .container input[type="text"],
+        .container input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        .container label {
+            font-weight: bold;
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+        
+        .container input[type="submit"] {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .container input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+        
+        .button--Inicio {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Solicitud de Datos - Aerolínea Nao</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" required>
+            <br>
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" required>
+            <br>
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" required>
+            <br>
+            <label for="num-pasaporte">Número de Pasaporte:</label>
+            <input type="text" id="num-pasaporte" required>
+            <br>
+            <label for="pais-emision">País de Emisión del Pasaporte:</label>
+            <input type="text" id="pais-emision" required>
+            <br>
+            <label for="fecha-emision">Fecha de Emisión:</label>
+            <input type="date" id="fecha-emision" required>
+            <br>
+            <br>
+            <label for="fecha-emision">Fecha de Vencimiento:</label>
+            <input type="date" id="fecha-emision" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Por favor, complete todos los campos.</p>
+        <br>
+        <br>
+        <h5>Regresar a la pagina principal</h5>
+        <a href="practica5_final.html" class="button--Inicio">Inicio</a>
+    </div>
+
+</body>
+
+</html>

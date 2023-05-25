@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pokédex</title>
+    <meta charset="UTF-8">
+    <style>
+        /* Estilos para el contenedor principal */
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .pokedex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 20px;
+        }
+        /* Estilos para cada tarjeta de Pokémon */
+        
+        .pokemon-card {
+            width: 200px;
+            height: 280px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .pokemon-card:hover {
+            transform: translateY(-5px);
+        }
+        /* Estilos para el nombre del Pokémon */
+        
+        .pokemon-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        /* Estilos para el tipo del Pokémon */
+        
+        .pokemon-type {
+            font-style: italic;
+            margin-bottom: 5px;
+            color: #777;
+        }
+        /* Estilos para la descripción del Pokémon */
+        
+        .pokemon-description {
+            font-size: 14px;
+            color: #555;
+        }
+        /* Estilos para las imágenes de los Pokémon */
+        
+        .pokemon-image {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            display: block;
+            padding-top: 10px;
+        }
+        
+        .button--Inicio {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pokedex">
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="pikachu.jpg" alt="Pikachu">
+            <h2 class="pokemon-name">Pikachu</h2>
+            <p class="pokemon-type">Eléctrico</p>
+            <p class="pokemon-description">Este Pokémon tiene bolsas en sus mejillas para almacenar electricidad.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Charizard.png" alt="Charizard">
+            <h2 class="pokemon-name">Charizard</h2>
+            <p class="pokemon-type">Fuego/Volador</p>
+            <p class="pokemon-description">Sus alas pueden llevar a este Pokémon cerca de una altitud de 4,600 pies.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Balbu.png" alt="Bulbasaur">
+            <h2 class="pokemon-name">Bulbasaur</h2>
+            <p class="pokemon-type">Planta/Veneno</p>
+            <p class="pokemon-description">Una extraña semilla fue plantada en su espalda al nacer.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="squitleeee.jpg" alt="Squirtle">
+            <h2 class="pokemon-name">Squirtle</h2>
+            <p class="pokemon-type">Agua</p>
+            <p class="pokemon-description">Cuando retrae su largo cuello dentro de su caparazón, dispara agua con fuerza.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="chamader.png" alt="Charmander">
+            <h2 class="pokemon-name">Charmander</h2>
+            <p class="pokemon-type">Fuego</p>
+            <p class="pokemon-description">Tiene una llama en su cola que arde más intensamente cuando está emocionado.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Blastoise.png" alt="Squirtle 2">
+            <h2 class="pokemon-name">Blastoise</h2>
+            <p class="pokemon-type">Agua</p>
+            <p class="pokemon-description">Tiene reactores de agua en el caparazón, que le sirven para atacar con fuerza.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Jigglypuff.png" alt="Jigglypuff">
+            <h2 class="pokemon-name">Jigglypuff</h2>
+            <p class="pokemon-type">Normal/Hada</p>
+            <p class="pokemon-description">Este Pokémon lindo puede poner a dormir a sus enemigos con su canto.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Mewtwo.png" alt="Mewtwo">
+            <h2 class="pokemon-name">Mewtwo</h2>
+            <p class="pokemon-type">Psíquico</p>
+            <p class="pokemon-description">Considerado uno de los Pokémon más poderosos y legendarios.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Eevee.png" alt="Eevee">
+            <h2 class="pokemon-name">Eevee</h2>
+            <p class="pokemon-type">Normal</p>
+            <p class="pokemon-description">Este Pokémon puede evolucionar en varias formas diferentes.</p>
+        </div>
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="Gyarados.png" alt="Gyarados">
+            <h2 class="pokemon-name">Gyarados</h2>
+            <p class="pokemon-type">Agua/Volador</p>
+            <p class="pokemon-description">Una vez que se enfurece, se convierte en un Pokémon poderoso y destructivo.</p>
+        </div>
+        <a href="practica5_final.html" class="button--Inicio">Inicio</a>
+    </div>
+</body>
+
+</html>
