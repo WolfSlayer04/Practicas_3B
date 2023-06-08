@@ -1,0 +1,186 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ejercicio {
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para cada ejercicio */
+
+.ejercicio p {
+    margin: 0;
+    padding: 5px;
+}
+
+
+/* Temas */
+
+.ejercicio p:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.ejercicio h2 {
+    margin-top: 20px;
+}
+
+
+/* Alineación de textos */
+
+.ejercicio p {
+    text-align: justify;
+}
+
+
+/* Imágenes */
+
+.ejercicio img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* Tablas */
+
+.ejercicio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.ejercicio table th,
+.ejercicio table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.ejercicio table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Formularios */
+
+.ejercicio form {
+    margin-bottom: 10px;
+}
+
+.ejercicio form p {
+    margin-bottom: 10px;
+}
+
+.ejercicio form input[type="text"],
+.ejercicio form input[type="number"],
+.ejercicio form input[type="radio"],
+.ejercicio form input[type="submit"],
+.ejercicio form input[type="reset"] {
+    margin-right: 5px;
+}
+
+.ejercicio form input[type="submit"],
+.ejercicio form input[type="reset"] {
+    cursor: pointer;
+}
+
+
+/* Ejercicio 1 */
+
+.ejercicio-1 {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.ejercicio-1 p {
+    font-weight: bold;
+}
+
+
+/* Ejercicio 2 */
+
+.ejercicio-2 {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.ejercicio-2 p {
+    font-style: italic;
+}
+
+
+/* Ejercicio 3 */
+
+.ejercicio-3 {
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+.ejercicio-3 p {
+    color: blue;
+}
+
+
+/* Ejercicio 4 */
+
+.ejercicio-4 {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.ejercicio-4 p {
+    /* Estilos específicos para el ejercicio 4 */
+}
+
+
+/* Ejercicio 5 */
+
+.ejercicio-5 {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.ejercicio-5 p {
+    /* Estilos específicos para el ejercicio 5 */
+}
+
+
+/* Ejercicio 6 */
+
+.ejercicio-6 {
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+.ejercicio-6 p {
+    /* Estilos específicos para el ejercicio 6 */
+}
+
+
+/* ... Agrega estilos para los demás ejercicios ... */
+
+
+/* Ejercicio 49 */
+
+.ejercicio-49 {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.ejercicio-49 p {
+    /* Estilos específicos para el ejercicio 49 */
+}

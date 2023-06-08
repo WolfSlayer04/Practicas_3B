@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de Alta</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+
+<body>
+    <h1>Formulario de Alta</h1>
+    <form>
+        <section>
+            <h2>Sección 1: Nombre y Apellido</h2>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido1">Primer Apellido:</label>
+                <input type="text" id="apellido1" name="apellido1" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido2">Segundo Apellido:</label>
+                <input type="text" id="apellido2" name="apellido2">
+            </div>
+        </section>
+
+        <section>
+            <h2>Sección 2: Email</h2>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sección 3: Dirección</h2>
+            <div class="form-group">
+                <label for="calle">Calle y Número:</label>
+                <input type="text" id="calle" name="calle" required>
+            </div>
+            <div class="form-group">
+                <label for="codigoPostal">Código Postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" required>
+            </div>
+            <div class="form-group">
+                <label for="municipio">Municipio:</label>
+                <select id="municipio" name="municipio" required>
+          <option value="">Seleccionar Municipio</option>
+          <!-- Opciones de municipios aquí -->
+          <option value="municipio1">Uman</option>
+        <option value="municipio2">Madrid</option>
+        <option value="municipio3">Tokio</option>
+        </select>
+            </div>
+            <div class="form-group">
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required>
+          <option value="">Seleccionar Provincia</option>
+          <!-- Opciones de provincias aquí -->
+          <option value="provincia1">Bosques</option>
+        <option value="provincia2">San siro</option>
+        <option value="provincia3">Chinarroz</option>
+        </select>
+            </div>
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+          <option value="">Seleccionar País</option>
+          <!-- Opciones de países aquí -->
+          <option value="pais1">Mexico</option>
+          <option value="pais2">España</option>
+          <option value="pais3">Japon</option>
+        </select>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sección 4: Teléfono</h2>
+            <div class="form-group">
+                <label for="telefonoFijo">Teléfono Fijo:</label>
+                <input type="tel" id="telefonoFijo" name="telefonoFijo">
+            </div>
+            <div class="form-group">
+                <label for="telefonoMovil">Teléfono Móvil:</label>
+                <input type="tel" id="telefonoMovil" name="telefonoMovil" required>
+            </div>
+        </section>
+
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

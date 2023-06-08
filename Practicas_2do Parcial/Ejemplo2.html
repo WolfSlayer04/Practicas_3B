@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Información del producto</title>
+    <style>
+        body {
+            background-color: #f2eada;
+            font-family: "Garamond", serif;
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #8c2c14;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #8c2c14;
+            border-radius: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #8c2c14;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #8c2c14;
+            border-radius: 5px;
+        }
+        
+        input[type="file"],
+        input[type="number"],
+        input[type="range"] {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #8c2c14;
+            border-radius: 5px;
+        }
+        
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-top: 5px;
+        }
+        
+        input[type="checkbox"]:checked::before,
+        input[type="radio"]:checked::before {
+            content: "\2713";
+            display: inline-block;
+            font-size: 14px;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            border: 1px solid #8c2c14;
+            border-radius: 50%;
+            background-color: #8c2c14;
+            color: #fff;
+            margin-right: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #8c2c14;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #9c4024;
+        }
+        
+        #impuesto-value {
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function updateImpuestoValue() {
+            var impuestoInput = document.getElementById("impuestos");
+            var impuestoValue = document.getElementById("impuesto-value");
+
+            impuestoValue.textContent = impuestoInput.value + "%";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Datos básicos</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <label for="visitas">Contador de visitas:</label>
+        <input type="checkbox" id="visitas" name="visitas">
+
+        <h1>Datos económicos</h1>
+
+        <label for="precio">Precio:</label>
+        <span>$</span>
+        <input type="number" id="precio" name="precio" required>
+
+        <label for="impuestos">Impuestos:</label>
+        <input type="range" id="impuestos" name="impuestos" min="1" max="35" oninput="updateImpuestoValue()">
+        <span id="impuesto-value" class="impuesto-value">1%</span>
+
+        <label>Promoción:</label>
+        <br>
+        <input type="radio" id="ninguno" name="promocion" value="ninguno" checked>
+        <label for="ninguno">Ninguno</label>
+        <br>
+
+        <input type="radio" id="transporte-gratuito" name="promocion" value="transporte-gratuito">
+        <label for="transporte-gratuito">Transporte Gratuito</label>
+        <br>
+
+        <input type="radio" id="descuento-5" name="promocion" value="descuento-5">
+        <label for="descuento-5">Descuento 5%</label>
+        <br>
+
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+
+</html>
