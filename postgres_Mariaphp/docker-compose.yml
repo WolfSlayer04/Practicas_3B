@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  mariadb:
+    image: mariadb:jammy
+    restart: always
+    environment:
+      MYSQL_USER: example-user
+      MYSQL_PASSWORD: user-password
+      MYSQL_ROOT_PASSWORD: root-secret-password
+      MYSQL_DATABASE: world-db
+    volumes:
+      - world-db:/var/lib/mysql
+    networks:
+      - my-network
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1-apache
+    restart: always
+    environment:
+      PMA_ARBITRARY: '1'
+    ports:
+      - 8081:80
+    networks:
+      - my-network
+    depends_on:
+      - mariadb
+
+networks:
+  my-network:
+
+volumes:
+  world-db:
