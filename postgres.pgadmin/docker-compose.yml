@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  database:
+    container_name: postgres-db
+    image: postgres:alpine3.18
+    ports:
+      - 5432:5432
+    volumes:
+      - mypostgres-db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=515t3m45_0p3r4t1v05
+
+  pgAdmin:
+    depends_on:
+      - database
+    container_name: pgAdmin
+    image: dpage/pgadmin4:7.3
+    ports:
+      - 8083:80
+    volumes:
+      - ./pgAdmin:/var/lib/pgadmin
+    environment:
+      - PGADMIN_DEFAULT_PASSWORD=H0L4_D5M
+      - PGADMIN_DEFAULT_EMAIL=candidatoabaja@google.com
+
+volumes:
+  mypostgres-db:
+    external: true
